@@ -60,8 +60,6 @@ Main process that extracts the CSV file that feeds the next workflow with the ne
 This Automation Edge workflow automates the process of filling out a web registration form on the following website:  
 [https://rpanapratica.koden.com.br/.html](https://rpanapratica.koden.com.br/)
 
-![image](https://github.com/user-attachments/assets/b14dee46-b0a8-4973-9f92-2017bbdfd4f6)
-
 ---
 
 ### ✅ Step-by-Step Description
@@ -83,7 +81,9 @@ This Automation Edge workflow automates the process of filling out a web registr
 | **Delay row** | Introduces a delay or pause after submitting each user's data, allowing the web application to process the submission before proceeding to the next record. |
 | **Continue LoopNovoUsuário** | Continues the loop to process the next user record from the input data.                                                               |
 | **Exit Browser** | Closes the web browser after all user records have been processed and the automation is complete.                                   |
-| **RelacaoEstados** | This step appears to be a parallel or preparatory process that manages or provides data related to "Estados" (States), possibly for validation or as input to "InsereUsuários". |
+| **RelacaoEstados** | This step appears to be a parallel or preparatory process that manages or provides data related to "Estados" (States), possibly for validation or as input to "InsereUsuários". 
+
+![image](https://github.com/user-attachments/assets/b14dee46-b0a8-4973-9f92-2017bbdfd4f6)
 
 ---
 
