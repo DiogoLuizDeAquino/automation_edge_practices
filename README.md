@@ -48,7 +48,8 @@ Automates the process of filling out a web registration form on the following we
 
 Main process that extracts the CSV file that feeds the next workflow with the necessary information for the continuation of the process and calls the other workflows.
 
-![image](https://github.com/user-attachments/assets/8160a490-6a4b-4d91-8f30-c06d29421d77)
+![image](https://github.com/user-attachments/assets/22e374b3-3519-49b8-a381-2b728cc7bd2b)
+
 
 ---
 
@@ -58,6 +59,8 @@ Main process that extracts the CSV file that feeds the next workflow with the ne
 
 This Automation Edge workflow automates the process of filling out a web registration form on the following website:  
 [https://rpanapratica.koden.com.br/.html](https://rpanapratica.koden.com.br/)
+
+![image](https://github.com/user-attachments/assets/b14dee46-b0a8-4973-9f92-2017bbdfd4f6)
 
 ---
 
