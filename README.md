@@ -15,8 +15,6 @@ Extracts the CSV file that feeds the next workflow with the necessary informatio
 Automates the process of filling out a web registration form on the following website:  
 [https://demo.automationtesting.in/Register.html](https://demo.automationtesting.in/Register.html)
 
----
-
 ### ✅ Step-by-Step Description
 
 | Step                          | Action                                                                                          |
@@ -60,8 +58,6 @@ Main process that extracts the CSV file that feeds the next workflow with the ne
 This Automation Edge workflow automates the process of filling out a web registration form on the following website:  
 [https://rpanapratica.koden.com.br/.html](https://rpanapratica.koden.com.br/)
 
----
-
 ### ✅ Step-by-Step Description
 
 | Step Name                     | Action                                                                                                                              |
@@ -92,8 +88,6 @@ This Automation Edge workflow automates the process of filling out a web registr
 ## Description:
 
 This Automation Edge workflow automate the extraction, processing, and organization of data from a web table, likely involving filtering, data manipulation, and output to an Excel file.
-
----
 
 ### ✅ Step-by-Step Description
 
