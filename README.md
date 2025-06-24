@@ -114,3 +114,35 @@ This Automation Edge workflow automate the extraction, processing, and organizat
 ---
 ---
 ---
+
+# 📂 WF_IntegraPlanilhas.psw
+
+## Description:
+
+This Automation Edge workflow integrates data from multiple spreadsheets, performs data validation, lookups, and generates individualized reports and a summary report, which is then distributed via email.
+
+---
+
+### ✅ Step-by-Step Description
+
+| Step Name                     | Action                                                                                                                              |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| **Planilha_Extratos** | Reads data from the "Extratos" (Statements) spreadsheet. This is a primary input source for the workflow.                                |
+| **Data Validator** | Validates the data read from "Planilha_Extratos" to ensure data integrity and correctness. Any invalid data follows a separate path to a log. |
+| **Write to log** | Logs details of any data that failed validation from the "Data Validator" step.                                                     |
+| **Stream lookup** | Performs a lookup operation on the incoming data stream, likely enriching the data with additional information from another source. |
+| **Modified Java Script Value**| Executes a JavaScript code snippet to transform or calculate new values based on the data stream, typically after the lookup.         |
+| **Planilha_Clientes** | Reads data from the "Clientes" (Clients) spreadsheet. This spreadsheet likely contains customer-specific information used for filtering or reporting. |
+| **Memory Group by** | Groups the processed data in memory based on specified criteria, preparing it for summary reporting.                                  |
+| **OutPut_Relatório** | Generates a summary report based on the grouped data. This report consolidates information from all processed data.                  |
+| **MAIL-TotalCompras** | Sends an email containing the "OutPut_Relatório" to a designated recipient, likely summarizing total purchases or similar metrics. |
+| **John** | Filters or processes data specifically for "John," indicating the generation of a report or data output related to this specific client. |
+| **Gastos_John** | Generates a report or outputs data detailing the expenses or transactions specifically for "John."                                   |
+| **Maria** | Filters or processes data specifically for "Maria," indicating the generation of a report or data output related to this specific client. |
+| **Gastos_Maria** | Generates a report or outputs data detailing the expenses or transactions specifically for "Maria."                                 |
+| **Pedro** | Filters or processes data specifically for "Pedro," indicating the generation of a report or data output related to this specific client. |
+| **Microsoft Excel Writer** | Writes data, specifically for "Pedro" in this branch, to a Microsoft Excel file. This is a specific output for "Pedro's" data.        |
+
+```
+```
+```
