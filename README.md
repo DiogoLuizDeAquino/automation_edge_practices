@@ -143,6 +143,9 @@ This Automation Edge workflow integrates data from multiple spreadsheets, perfor
 | **Pedro** | Filters or processes data specifically for "Pedro," indicating the generation of a report or data output related to this specific client. |
 | **Microsoft Excel Writer** | Writes data, specifically for "Pedro" in this branch, to a Microsoft Excel file. This is a specific output for "Pedro's" data.        |
 
+![image](https://github.com/user-attachments/assets/9a4cbd5a-85e7-44b6-9f3e-ff25543af9a3)
+
+
 ```
 ```
 ```
