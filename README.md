@@ -148,4 +148,21 @@ This Automation Edge workflow integrates data from multiple spreadsheets, perfor
 
 ```
 ```
+
+# 📂 WF_OCR_API
+
+## Description:
+
+This Automation Edge workflow demonstrates a common pattern for interacting with a RESTful API, specifically for Optical Character Recognition (OCR), to process data and log the results.
+
+### ✅ Step-by-Step Description
+
+| Step Name                     | Action                                                                                                                              |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| **Start** | Initiates the workflow execution. This is the entry point for the process.                                                                  |
+| **Advanced REST Client** | Sends a request to a RESTful API. Given the workflow name "WF_OCR_API," this step is specifically making an API call to an OCR service. It could be sending an image or document for text extraction. |
+| **JSON Input** | Processes the response received from the "Advanced REST Client." This step is configured to parse the API's output, which is expected to be in JSON format. |
+| **Write to log** | Records the processed data (likely the OCR results extracted from the JSON input) to a log file or system. This is crucial for monitoring and debugging. |
+
 ```
+
