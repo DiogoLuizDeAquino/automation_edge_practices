@@ -164,6 +164,28 @@ This Automation Edge workflow demonstrates a common pattern for interacting with
 | **JSON Input** | Processes the response received from the "Advanced REST Client." This step is configured to parse the API's output, which is expected to be in JSON format. |
 | **Write to log** | Records the processed data (likely the OCR results extracted from the JSON input) to a log file or system. This is crucial for monitoring and debugging. |
 
+![image](https://github.com/user-attachments/assets/2d1ad816-8af1-4c7c-9c4d-8ad23a0e69ae)
+
 ```
 ```
+
 # 📂 WF_OCR_tesseract.psw
+
+## Description:
+
+This Automation Edge workflow utilizes the Tesseract OCR engine to extract text from images and subsequently processes the extracted text by splitting it into individual rows.
+
+---
+
+### ✅ Step-by-Step Description
+
+| Step Name                     | Action                                                                                                                              |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| **Start** | Initiates the workflow execution. This is the entry point for the process.                                                                  |
+| **OCR: Tesseract** | Performs Optical Character Recognition (OCR) on an image or file, using the Tesseract engine. This step extracts text from visual elements. |
+| **Split field to rows** | Takes the text extracted by the "OCR: Tesseract" step and divides it into multiple rows. This is useful for processing each line of text individually after extraction. |
+
+![image](https://github.com/user-attachments/assets/b014f833-6f71-40a1-9602-72de791c9767)
+
+```
+```
