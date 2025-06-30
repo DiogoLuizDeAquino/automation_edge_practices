@@ -66,9 +66,9 @@ This Automation Edge workflow automates the process of filling out a web registr
 | **Stream lookup Get Variables** | Retrieves additional variables or performs lookups to enrich the user data before form submission.                                    |
 | **Abre Form** | Launches the web browser and navigates to the registration form URL.                                                                |
 | **Startloop Web Composite** | Initiates a loop to process multiple user records. This step suggests that a "Web Composite" component encapsulates the entire form-filling process for each user. |
-| **Blocking Step** | Acts as a control point, potentially to pause the workflow for validation or to handle exceptions.                                    |
+| **Blocking Step** | Acts as a control point, to pause the workflow for validation or to handle exceptions.                                    |
 | **DefineGenero** | Makes a decision based on the gender information of the current user record to select the appropriate gender option on the form.      |
-| **DefineGenero2** | Another decision point related to gender, potentially for further validation or handling of different gender-related fields.            |
+| **DefineGenero2** | Another decision point related to gender, for further validation or handling of different gender-related fields.            |
 | **Feminino** | Selects the "Feminino" (Female) option on the web form.                                                                             |
 | **Masculino** | Selects the "Masculino" (Male) option on the web form.                                                                              |
 | **Estado** | Fills in the "Estado" (State) field on the web form.                                                                                |
@@ -87,27 +87,27 @@ This Automation Edge workflow automates the process of filling out a web registr
 
 ## Description:
 
-This Automation Edge workflow automate the extraction, processing, and organization of data from a web table, likely involving filtering, data manipulation, and output to an Excel file.
+This Automation Edge workflow automate the extraction, processing, and organization of data from a web table, involving filtering, data manipulation, and output to an Excel file.
 
 ### ✅ Step-by-Step Description
 
 | Step Name                     | Action                                                                                                                              |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | **Start Browser** | Launches the web browser to access the web page containing the table.                                                               |
-| **EsperaTabela** | Introduces a waiting period, likely to ensure that the web table is fully loaded and visible before attempting to interact with it. |
+| **EsperaTabela** | Introduces a waiting period, to ensure that the web table is fully loaded and visible before attempting to interact with it. |
 | **Web Table** | Interacts with or extracts data from a web table on the opened web page. This is the core step for data retrieval.                 |
-| **Aguarda Tabela** | Another waiting step, potentially to confirm the table data is stable or fully available after an action.                         |
+| **Aguarda Tabela** | Another waiting step, to confirm the table data is stable or fully available after an action.                         |
 | **Microsoft Excel Writer** | Writes the extracted or processed data into a Microsoft Excel file. This is an output step.                                         |
 | **Exit Browser** | Closes the web browser after all necessary web interactions are completed.                                                          |
-| **OrdenaAlfabetica** | Sorts the data alphabetically based on a specific field or column. This step happens after the initial browser interaction and likely processes data already extracted or prepared. |
+| **OrdenaAlfabetica** | Sorts the data alphabetically based on a specific field or column. This step happens after the initial browser interaction and processes data already extracted or prepared. |
 | **UnificaRepetidas** | Consolidates or merges duplicate records within the dataset, ensuring uniqueness.                                                    |
 | **DivideCampoNascimento** | Divides or parses a field containing birth date information into separate components (e.g., day, month, year).                      |
 | **Filtra Feminino** | Filters the dataset to include only records where the gender is "Feminino" (Female).                                              |
 | **Altera Estado** | Modifies the "Estado" (State) field for certain records. This could be a data transformation or correction step.                   |
-| **Filtra Estado** | Filters the dataset based on the "Estado" (State) field, potentially to segregate data by state.                                    |
-| **Aguarda Gravacao** | A waiting step, likely to ensure that a previous data recording or writing operation is complete before proceeding.                |
-| **TabelaDasSolteiras** | This step likely processes or outputs data specifically related to "single" individuals, possibly after filtering by marital status or a similar criterion. |
-| **TabelaDasCasadas** | This step likely processes or outputs data specifically related to "married" individuals, potentially after filtering by marital status. |
+| **Filtra Estado** | Filters the dataset based on the "Estado" (State) field, to segregate data by state.                                    |
+| **Aguarda Gravacao** | A waiting step, to ensure that a previous data recording or writing operation is complete before proceeding.                |
+| **TabelaDasSolteiras** | This step processes or outputs data specifically related to "single" individuals, possibly after filtering by marital status or a similar criterion. |
+| **TabelaDasCasadas** | This step processes or outputs data specifically related to "married" individuals, after filtering by marital status. |
 
 ![image](https://github.com/user-attachments/assets/eba70c92-f26b-49f6-a0f4-6db0374b2b15)
 
@@ -130,12 +130,12 @@ This Automation Edge workflow integrates data from multiple spreadsheets, perfor
 | **Planilha_Extratos** | Reads data from the "Extratos" (Statements) spreadsheet. This is a primary input source for the workflow.                                |
 | **Data Validator** | Validates the data read from "Planilha_Extratos" to ensure data integrity and correctness. Any invalid data follows a separate path to a log. |
 | **Write to log** | Logs details of any data that failed validation from the "Data Validator" step.                                                     |
-| **Stream lookup** | Performs a lookup operation on the incoming data stream, likely enriching the data with additional information from another source. |
+| **Stream lookup** | Performs a lookup operation on the incoming data stream, enriching the data with additional information from another source. |
 | **Modified Java Script Value**| Executes a JavaScript code snippet to transform or calculate new values based on the data stream, typically after the lookup.         |
-| **Planilha_Clientes** | Reads data from the "Clientes" (Clients) spreadsheet. This spreadsheet likely contains customer-specific information used for filtering or reporting. |
+| **Planilha_Clientes** | Reads data from the "Clientes" (Clients) spreadsheet. This spreadsheet contains customer-specific information used for filtering or reporting. |
 | **Memory Group by** | Groups the processed data in memory based on specified criteria, preparing it for summary reporting.                                  |
 | **OutPut_Relatório** | Generates a summary report based on the grouped data. This report consolidates information from all processed data.                  |
-| **MAIL-TotalCompras** | Sends an email containing the "OutPut_Relatório" to a designated recipient, likely summarizing total purchases or similar metrics. |
+| **MAIL-TotalCompras** | Sends an email containing the "OutPut_Relatório" to a designated recipient, summarizing total purchases or similar metrics. |
 | **John** | Filters or processes data specifically for "John," indicating the generation of a report or data output related to this specific client. |
 | **Gastos_John** | Generates a report or outputs data detailing the expenses or transactions specifically for "John."                                   |
 | **Maria** | Filters or processes data specifically for "Maria," indicating the generation of a report or data output related to this specific client. |
