@@ -145,10 +145,10 @@ This Automation Edge workflow integrates data from multiple spreadsheets, perfor
 
 ![image](https://github.com/user-attachments/assets/9a4cbd5a-85e7-44b6-9f3e-ff25543af9a3)
 
-
 ```
 ```
-
+```
+```
 # 📂 WF_OCR_API
 
 ## Description:
@@ -165,4 +165,5 @@ This Automation Edge workflow demonstrates a common pattern for interacting with
 | **Write to log** | Records the processed data (likely the OCR results extracted from the JSON input) to a log file or system. This is crucial for monitoring and debugging. |
 
 ```
-
+```
+# 📂 WF_OCR_tesseract.psw
